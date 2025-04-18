@@ -1,0 +1,187 @@
+/* ===== RESET GERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ===== ESTILO DO BODY ===== */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("fundo-roxo.gif");
+    background-size:cover;
+  }
+  
+  /* ===== MENU SUPERIOR FIXO NO TOPO ===== */
+  .menu-superior {
+    background-color:#560079; /* Cor escura para o menu */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  
+  /* Logo ou título do menu */
+  .menu-superior .logo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Links do menu */
+  .menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .menu-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .menu-links a:hover {
+    background-color: #9100ca; /* Cor de destaque quando o link é pressionado */
+  }
+  
+  /* Fundo principal (conteúdo) */
+  .fundo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(227, 198, 255); /* Fundo branco para o conteúdo */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras suaves no conteúdo */
+    padding-top: 80px; /* Espaço para não sobrepor o menu */
+    margin-top: 30px;
+  }
+  
+  /* Título das seções */
+  h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #1b0031;
+  }
+  h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: #1b0031;
+    text-align: center;
+  }
+  
+  /* Estilo dos botões */
+  button {
+    background-color: #6a0094; /* Cor original dos botões (azul) */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1px;
+  }
+  
+  button:hover {
+    background-color:#8f00c7; /* Cor mais escura quando o botão é pressionado */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  .botoes-centralizados {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin: 20px 0; /* Espaçamento em torno dos botões */
+  }
+  .titulo-centralizado {
+    text-align: center; /* Centraliza os títulos horizontalmente */
+    font-size: 1.5rem;
+    color: #1b0031;
+    margin-bottom: 10px;
+  }
+  /* Estilo da seção "Sobre mim" */
+  .sobreMim {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sobreMim img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+  }
+
+  .sobreMim:hover img {
+      transform: scale(1.05); /* Aumenta 20% o tamanho da div .fundo */
+  }
+  .texto {
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  
+  /* ===== RESPONSIVIDADE ===== */
+  @media (max-width: 768px) {
+    /* Menu se torna vertical em telas pequenas */
+    .menu-superior {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .fundo {
+      padding-top: 100px; /* Ajuste de padding para mobile */
+    }
+
+  }
+  
+  .portfolio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+  }
+
+  .portfolio:hover img {
+      transform: scale(1.03); /* Aumenta 20% o tamanho da div .fundo */
+  }
+
+  .imagem_curriculo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .imagem_curriculo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+  }
+
+  .imagem_curriculo:hover img {
+    transform: scale(1.03); /* Aumenta 20% o tamanho da div .fundo */
+}
